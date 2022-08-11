@@ -10,6 +10,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { DataSource } from 'typeorm';
 import { MongooseModule } from '@nestjs/mongoose';
 import { GraphQLModule } from '@nestjs/graphql';
+import { cryptoModule } from './crypto/crypto.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { GraphQLModule } from '@nestjs/graphql';
     }),
     userModule,
     stockModule,
+    cryptoModule,
   ],
   controllers: [AppController],
   providers: [AppService],

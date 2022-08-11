@@ -8,8 +8,8 @@ import {
 import { StockService } from './stock.service';
 import { stockDTO, stockActionDTO } from './model/stock.model';
 
-@ApiTags('user')
-@Controller('user')
+@ApiTags('Stock')
+@Controller('Stock')
 export class stockController {
   constructor(private readonly stockService: StockService) {}
 
